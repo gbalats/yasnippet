@@ -742,7 +742,7 @@ and friends."
                                (symbolp neighbour))
                      do (push neighbour explored)
                      (funcall dfs neighbour)))))
-    (mapcar dfs explored)
+    (mapc dfs explored)
     (nreverse explored)))
 
 (defvar yas-minor-mode-hook nil
